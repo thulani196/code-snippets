@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<form id="PaymentRedirectForm" name="PaymentRedirectForm" method="post" action="https://migs-mtf.mastercard.com.au/vpcpay">
+  <input type="hidden" name="vpc_AccessCode" value="" />
+  <input type="hidden" name="vpc_Amount" value="" />
+  <input type="hidden" name="vpc_Card" value="" />
+  <input type="hidden" name="vpc_CardExp" value="" />
+  <input type="hidden" name="vpc_CardNum" value="" />
+  <input type="hidden" name="vpc_CardSecurityCode" value="" />
+  <input type="hidden" name="vpc_Command" value="" />
+  <input type="hidden" name="vpc_Currency" value="" />
+  <input type="hidden" name="vpc_Gateway" value="" />
+  <input type="hidden" name="vpc_MerchTxnRef" value="" />
+  <input type="hidden" name="vpc_Merchant" value="" />
+  <input type="hidden" name="vpc_OrderInfo" value="" />
+  <input type="hidden" name="vpc_ReturnURL" value="" />
+  <input type="hidden" name="vpc_Version" value="" />
+  <input type="hidden" name="vpc_SecureHash" value="" />
+  <input type="hidden" name="vpc_SecureHashType" value="" />
+</form>
