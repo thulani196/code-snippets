@@ -11,3 +11,6 @@ in which business to invest in to depending on the Condor extracted from the sai
 
 ### 4. Plant Disease Detection API
 Yet another internal Zig Project. We built a deep learning model using Transfer Learning with Pytorch and got above 90% accuracy. We then built a Simple Flask api to expose the learned model to web apps to accept images as input through an HTTP Request. Both Notebook and API are attached.
+
+### 5. ZigOps-PaymentProcessing-Microservice
+This provides a service of processing multi-currency payments for our ZigOps Payroll system
