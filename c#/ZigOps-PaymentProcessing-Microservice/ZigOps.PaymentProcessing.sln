@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29709.97
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{465700FA-1EDF-424D-89FF-26F42C710C6E}"
+	ProjectSection(SolutionItems) = preProject
+		ReadME.md = ReadME.md
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZigOps.PaymentProcessing.API", "ZigOps.PaymentProcessing.API\ZigOps.PaymentProcessing.API.csproj", "{256C37C8-FACD-40E3-AF68-271BB179D933}"
+	ProjectSection(ProjectDependencies) = postProject
+		{4411E5F6-9921-4F7F-B3E8-3093EDFAFF91} = {4411E5F6-9921-4F7F-B3E8-3093EDFAFF91}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZigOps.PaymentProcessing.Data", "ZigOps.PaymentProcessing.Data\ZigOps.PaymentProcessing.Data.csproj", "{4411E5F6-9921-4F7F-B3E8-3093EDFAFF91}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZigOps.PaymentProcessing.Service", "ZigOps.PaymentProcessing.Service\ZigOps.PaymentProcessing.Service.csproj", "{264A843F-2B7E-4254-924F-3C817C32ABAC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZigOps.PaymentProcessing.Test", "ZigOps.PaymentProcessing.Test\ZigOps.PaymentProcessing.Test.csproj", "{33008565-9EE1-4B7B-8B2C-84BE3EBC4A9C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{256C37C8-FACD-40E3-AF68-271BB179D933}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{256C37C8-FACD-40E3-AF68-271BB179D933}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{256C37C8-FACD-40E3-AF68-271BB179D933}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{256C37C8-FACD-40E3-AF68-271BB179D933}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4411E5F6-9921-4F7F-B3E8-3093EDFAFF91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4411E5F6-9921-4F7F-B3E8-3093EDFAFF91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4411E5F6-9921-4F7F-B3E8-3093EDFAFF91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4411E5F6-9921-4F7F-B3E8-3093EDFAFF91}.Release|Any CPU.Build.0 = Release|Any CPU
+		{264A843F-2B7E-4254-924F-3C817C32ABAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{264A843F-2B7E-4254-924F-3C817C32ABAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{264A843F-2B7E-4254-924F-3C817C32ABAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{264A843F-2B7E-4254-924F-3C817C32ABAC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33008565-9EE1-4B7B-8B2C-84BE3EBC4A9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33008565-9EE1-4B7B-8B2C-84BE3EBC4A9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33008565-9EE1-4B7B-8B2C-84BE3EBC4A9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33008565-9EE1-4B7B-8B2C-84BE3EBC4A9C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1F54F9EA-154B-45D6-A1D8-10B6799CA56C}
+	EndGlobalSection
+EndGlobal
