@@ -24,7 +24,7 @@ namespace FlynnDW.Functions
             [HttpTrigger(AuthorizationLevel.Anonymous, "get", "post", Route = null)] HttpRequest req,
             ILogger log)
         {
-            log.LogInformation("C# HTTP trigger function processed a request."); string connectionString = "DefaultEndpointsProtocol=https;AccountName=flynndpdlsv201prod;AccountKey=/UG6Zl9Nw9RqgM7oxhy0aVUMjFg2TFc7KuwnmGS1XRG+NmCbHRL5DZe/ONQFGgiFNf61Qa4UPQR0wh8yVU8LAw==;EndpointSuffix=core.windows.net";
+            log.LogInformation("C# HTTP trigger function processed a request."); string connectionString = "BlobConnection";
             CloudStorageAccount blobAccount = CloudStorageAccount.Parse(connectionString);
             CloudBlobClient blobClient = blobAccount.CreateCloudBlobClient();
             CloudBlobContainer blobContainer = blobClient.GetContainerReference("dls");
