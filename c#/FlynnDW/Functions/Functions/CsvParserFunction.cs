@@ -16,6 +16,13 @@ namespace FlynnDW.Functions
             _logger = logger;
             _service = service;
         }
+
+        /// <summary>
+        /// Function to parse and extract data from csv file
+        /// </summary>
+        /// <param name="myBlob">Path to folder containing csv file(s)</param>
+        /// <param name="name">Name of file, dynamically populated according to file name in iteration</param>
+        /// <param name="binder">Used to write content to files and save them in Blob Storage</param>
         [FunctionName("CsvParserFunction")]
         public  async Task RunAsync([BlobTrigger("dls/raw/tbe/{name}", Connection = "BlobConnection")]
             Stream myBlob, string name,Binder binder)

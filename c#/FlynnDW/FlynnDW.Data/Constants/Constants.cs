@@ -12,7 +12,7 @@ namespace FlynnDW.Data.Constants
             public const string PosLogRootDir = "PosLogRootDir";
             public const string PosLogParsedDir = "PosLogParsedDir";
         } 
-         // this dict is a key-value pair between the code and folder/table name
+                // this dict is a key-value pair between the code and folder/table name
                 // NOTE: "000" is a dummy code to give a placeholder for the folder name of "PacketHeader"
                 public  static Dictionary<string, string> FileTypes = new Dictionary<string, string>()
                 {

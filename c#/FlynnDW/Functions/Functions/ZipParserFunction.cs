@@ -17,11 +17,11 @@ namespace FlynnDW.Functions
             _service = service;
         }
         /// <summary>
-        /// 
+        /// Used to pick and extract contents of a zip file
         /// </summary>
-        /// <param name="myBlob"></param>
-        /// <param name="name"></param>
-        /// <param name="binder"></param>
+        /// <param name="myBlob">Blob file object</param>
+        /// <param name="name">File name</param>
+        /// <param name="binder">Used to write content to files.</param>
         /// <returns></returns>
         [FunctionName("ZipParserFunction")]
         public  async Task RunAsync([BlobTrigger("dls/raw/zip/{name}", Connection = "BlobConnection")]

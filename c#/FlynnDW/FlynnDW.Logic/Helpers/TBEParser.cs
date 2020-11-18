@@ -21,17 +21,16 @@ namespace FlynnDW.Logic.Helpers
         {
             _logger = logger;
         }
-  
+
         /// <summary>
-        /// 
+        /// Function to extract data from CSV files.
         /// </summary>
-        /// <param name="inputBlob"></param>
-        /// <param name="name"></param>
-        /// <param name="binder"></param>
-        /// <param name="sourceDir"></param>
-        /// <param name="targetDir"></param>
-        /// <returns></returns>
-        public  async Task ParseFile(Stream inputBlob,
+        /// <param name="inputBlob">Input file</param>
+        /// <param name="name">File name</param>
+        /// <param name="binder">Binder to write content to another file</param>
+        /// <param name="sourceDir">Source for files</param>
+        /// <param name="targetDir">Destination for output files</param>
+        public async Task ParseFile(Stream inputBlob,
             string name,
             Binder binder,
             string sourceDir,
@@ -126,17 +125,16 @@ namespace FlynnDW.Logic.Helpers
             }
 
         }
-        
+
 
         /// <summary>
-        /// 
+        /// Function to extract data from XML data files
         /// </summary>
-        /// <param name="inputBlob"></param>
-        /// <param name="name"></param>
-        /// <param name="binder"></param>
-        /// <param name="targetDir"></param>
-        /// <returns></returns>
-        public  async Task ParseXmlAsync(Stream inputBlob,
+        /// <param name="inputBlob">Input file</param>
+        /// <param name="name">File name</param>
+        /// <param name="binder">Binder to write content to another file</param>
+        /// <param name="targetDir">Destination for output files</param>
+        public async Task ParseXmlAsync(Stream inputBlob,
             string name,
             Binder binder,
             string targetDir)
@@ -155,13 +153,13 @@ namespace FlynnDW.Logic.Helpers
         }
 
         /// <summary>
-        /// 
+        /// This function extracts data files from a Zipped folder and dumps then in a directory on Blob storage in readiness to be extracted.
         /// </summary>
-        /// <param name="inputBlob"></param>
-        /// <param name="name"></param>
-        /// <param name="binder"></param>
-        /// <param name="sourceDir"></param>
-        /// <param name="targetDir"></param>
+        /// <param name="inputBlob">Input file</param>
+        /// <param name="name">File name</param>
+        /// <param name="binder">Binder to write content to another file</param>
+        /// <param name="sourceDir">Source for files</param>
+        /// <param name="targetDir">Destination for output files</param>
         /// <returns></returns>
          public  async Task ZipParser(Stream inputBlob
             , string name
@@ -225,9 +223,9 @@ namespace FlynnDW.Logic.Helpers
             } 
         }
         /// <summary>
-        /// 
+        /// Generates filename.
         /// </summary>
-        /// <param name="fileName"></param>
+        /// <param name="fileName">Filename</param>
         /// <returns></returns>
         private static string ParseName(string fileName)
         {
@@ -236,12 +234,12 @@ namespace FlynnDW.Logic.Helpers
             return tableName;
         }
         /// <summary>
-        /// 
+        /// This function gets extracted data and write it to Blob storage in a file
         /// </summary>
-        /// <param name="name"></param>
-        /// <param name="targetDir"></param>
-        /// <param name="binder"></param>
-        /// <param name="jsonData"></param>
+        /// <param name="name">File name</param>
+        /// <param name="binder">Binder to write content to another file</param>
+        /// <param name="targetDir">Target directory for files</param>
+        /// <param name="jsonData">Data to be written to json file</param>
         /// <returns></returns>
         private static async Task SaveToJsonAsync( string name, string targetDir, Binder binder, string jsonData)
         {

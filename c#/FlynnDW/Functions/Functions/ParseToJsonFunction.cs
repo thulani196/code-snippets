@@ -16,11 +16,11 @@ namespace FlynnDW.Functions
             _logger = logger;
         }
         /// <summary>
-        /// 
+        /// Used to fetch json files from storage and extract content
         /// </summary>
-        /// <param name="inputBlob"></param>
-        /// <param name="binder"></param>
-        /// <param name="name"></param>
+        /// <param name="inputBlob">Input Json FIles</param>
+        /// <param name="binder"> Used to write content to file</param>
+        /// <param name="name">File name</param>
         [FunctionName("ParseToJson")]
         public  async void Run(
             [BlobTrigger( "dls/raw/poslog/{name}", Connection = "BlobConnection")] 

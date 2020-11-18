@@ -1,5 +1,4 @@
-﻿using System;
-using System.IO;
+﻿using System.IO;
 using System.Threading.Tasks;
 using FlynnDW.Data.Constants;
 using FlynnDW.Logic.Interfaces;
@@ -8,6 +7,9 @@ using Microsoft.Extensions.Configuration;
 
 namespace FlynnDW.Logic.Services
 {
+    /// <summary>
+    /// Implements IFileParserService
+    /// </summary>
     public class FileParserService : IFileParserService
     {
         private readonly IConfiguration _config;
