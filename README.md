@@ -14,3 +14,6 @@ Yet another internal Zig Project. We built a deep learning model using Transfer 
 
 ### 5. ZigOps-PaymentProcessing-Microservice
 This provides a service of processing multi-currency payments for our ZigOps Payroll system
+
+### 6. ZigOps-frontend
+This is a Zig internal project that lets you manage payroll, leave-request and employee onboarding processes easily and effectively whether your workforce is onsite or remote.
